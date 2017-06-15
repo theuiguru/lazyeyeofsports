@@ -2,6 +2,7 @@ var bgimg = new Array('nba', 'nfl', 'mlb'),
     b = Math.floor(Math.random() * bgimg.length),
     body = document.querySelector("body");
 body.style.backgroundImage = 'url(https://s.yimg.com/dh/ap/default/140918/' + bgimg[b] + '_bg.jpg)';
+body.style.backgroundRepeat = 'no-repeat';
 body.style.backgroundSize = 'cover';
 
 
