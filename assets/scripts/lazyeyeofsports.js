@@ -2,9 +2,6 @@ var bgimg = new Array('nba', 'nfl', 'mlb'),
     b = Math.floor(Math.random() * bgimg.length),
     body = document.querySelector("body");
 body.style.backgroundImage = 'url(./assets/images/' + bgimg[b] + '_bg.jpg)';
-body.style.backgroundRepeat = 'no-repeat';
-body.style.backgroundSize = 'cover';
-
 
 //jquery.rss
 (function ($) {
