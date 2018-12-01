@@ -3,14 +3,18 @@
 <meta name="Keywords" content="thelazyeyeofsports, lazyeyeofsports, sports, nfl, nba, mlb, nhl, pga" />
 <meta name="Description" content="The Lazy Eye of Sports" /><title>The Lazy Eye of Sports</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"><style type="text/css">
-html, body {margin:0; padding:0; font-size:18px; background-size:cover;}
-.container {color:#fff; width:100%; max-width:800px; margin:0 auto;}
+html, body {margin:0; padding:0; font-size:18px; background-size:cover; height:100%;}
+.container {color:#fff; width:100%; max-width:800px; margin:0 auto; min-height:100%; margin-bottom:-100px;}
+.container:after {content:""; display:block;}
+.container:after, footer {height:100px;}
 .container img {width:100%; max-width:100%;}
 .container a {color:#9FA8DA;}
 header {background:#000088;}
 section {background:rgba(0,0,0,0.5); color:#fff; padding:20px;}
+footer {background:rgba(0,0,0,0.5); color:#fff; text-align:center; padding-top:30px;}
 </style></head><body>
 <div class="container"><header><img src="./assets/images/lazyeye.jpg"></header>
 <section><h2>Welcome To The Lazy Eye of Sports!</h2><p>Blog content will be hosted here...</p></section></div>
+<footer>&copy; <span class="year"></span> The Lazy Eye of Sports.</footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.js"></script>
 <script src="./assets/scripts/app.js"></script></body></html>

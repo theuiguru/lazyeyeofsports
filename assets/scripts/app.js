@@ -3,3 +3,7 @@ var bgimg = new Array('nba', 'nfl', 'mlb'),
     body = document.querySelector("body");
 body.style.background = 'url(./assets/images/' + bgimg[b] + '_bg.jpg) no-repeat fixed center';
 body.style.backgroundSize = 'cover';
+var today = new Date(); 
+var year = today.getFullYear(); 
+var el = document.querySelector(".year"); 
+el.innerHTML = year;
