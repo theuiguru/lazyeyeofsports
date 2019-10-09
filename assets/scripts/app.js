@@ -7,3 +7,14 @@ var today = new Date();
 var year = today.getFullYear(); 
 var el = document.querySelector(".year"); 
 el.innerHTML = year;
+async function fetchWPdata() {
+	await fetch('https://public-api.wordpress.com/rest/v1/sites/thelazyeyeofsports.wordpress.com/posts')
+    .then(res => res.json())
+    .then((data) => {
+        data.posts.forEach(post => {
+            const postDate = new Date(post.date);
+            document.getElementById("blog").innerHTML += "<p>" + post.title + "\n" + (postDate.getMonth()+1) + "/" + postDate.getDate() + "/" + postDate.getFullYear() + "<br>" + post.excerpt + "</p>";
+        });
+    });
+}
+fetchWPdata();
