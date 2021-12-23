@@ -6,7 +6,7 @@ body.style.backgroundSize = 'cover';
 var today = new Date(); 
 var year = today.getFullYear(); 
 var el = document.querySelector(".year"); 
-el.innerHTML = year;
+el.textContent = year;
 async function fetchWPdata() {
 	await fetch('https://public-api.wordpress.com/rest/v1/sites/thelazyeyeofsports.wordpress.com/posts')
     .then(res => res.json())
